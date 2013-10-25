@@ -40,7 +40,7 @@
           <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur. Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem.</p>
           <footer class="read-more"><a href="#">Read More &raquo;</a></footer>
         </article>
-        <h2>Headline Text</h2>
+        <h2>New Animals</h2>
         <ul class="nospace spacing clear">
           <li class="one_half first">
             <figure class="clear">
@@ -79,29 +79,29 @@
       <!-- ################################################################################################ -->
       <div class="one_half">
         <article class="clear push60">
-          <div class="one_quarter first center"><span class="icon-fullscreen icon-8x red"></span>
+          <div class="one_quarter first center"><img src="<?php echo base_url();?>images/home/experience.jpg" />
             <footer style="margin-top:20px;"><a href="#" class="button small gradient red rnd5">Read More &raquo;</a></footer>
           </div>
           <div class="three_quarter">
-            <h1 class="emphasise nospace">Headline Text</h1>
+            <h1 class="emphasise nospace">Special Experience</h1>
             <p class="nospace">Donec a erat in enim cursus gravida id non urna. Vivamus feugiat mauris sed sem tristique non eleifend lorem elementum. Integer imperdiet vestibulum leo ut tincidunt. In sagittis diam ut leo convallis vel rutrum mauris ullamcorper. Vestibulum adipiscing erat sit amet justo luctus molestie. In hac habitasse platea dictumst. In lacinia erat id ante faucibus tristique.</p>
           </div>
         </article>
         <article class="clear push60">
-          <div class="one_quarter first center"><span class="icon-pushpin icon-8x blue"></span>
+          <div class="one_quarter first center"><img src="<?php echo base_url();?>images/home/facilities.jpg" />
             <footer style="margin-top:20px;"><a href="#" class="button small gradient blue rnd5">Read More &raquo;</a></footer>
           </div>
           <div class="three_quarter">
-            <h1 class="emphasise nospace">Headline Text</h1>
+            <h1 class="emphasise nospace">Visitor Facilities</h1>
             <p class="nospace">Donec a erat in enim cursus gravida id non urna. Vivamus feugiat mauris sed sem tristique non eleifend lorem elementum. Integer imperdiet vestibulum leo ut tincidunt. In sagittis diam ut leo convallis vel rutrum mauris ullamcorper. Vestibulum adipiscing erat sit amet justo luctus molestie. In hac habitasse platea dictumst. In lacinia erat id ante faucibus tristique.</p>
           </div>
         </article>
         <article>
-          <div class="one_quarter first center"><span class="icon-thumbs-up icon-8x purple"></span>
+          <div class="one_quarter first center"><img src="<?php echo base_url();?>images/home/zone&animal.jpg" />
             <footer style="margin-top:20px;"><a href="#" class="button small gradient purple rnd5">Read More &raquo;</a></footer>
           </div>
           <div class="three_quarter">
-            <h1 class="emphasise nospace">Headline Text</h1>
+            <h1 class="emphasise nospace">Zones and animals</h1>
             <p class="nospace">Donec a erat in enim cursus gravida id non urna. Vivamus feugiat mauris sed sem tristique non eleifend lorem elementum. Integer imperdiet vestibulum leo ut tincidunt. In sagittis diam ut leo convallis vel rutrum mauris ullamcorper. Vestibulum adipiscing erat sit amet justo luctus molestie. In hac habitasse platea dictumst. In lacinia erat id ante faucibus tristique.</p>
           </div>
         </article>

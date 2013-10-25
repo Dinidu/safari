@@ -18,15 +18,15 @@
     <div class="one_quarter">
       <h2 class="footer_title">Latest Gallery</h2>
       <ul id="ft_gallery" class="nospace spacing clear">
-        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/animals/new1.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/animals/new2.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/animals/new3.jpg" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/animals/new4.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/animals/new5.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/animals/new6.jpg" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/animals/new7.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/animals/new8.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/animals/new9.jpg" alt=""></a></li>
       </ul>
     </div>
     <div class="one_quarter">
@@ -42,7 +42,7 @@
     </div>
     <div class="one_quarter">
       <h2 class="footer_title">Contact Us</h2>
-      <form class="rnd5" action="#" method="post">
+      <form class="rnd5">
         <div class="form-input clear">
           <label for="ft_author">Name <span class="required">*</span><br>
             <input type="text" name="ft_author" id="ft_author" value="" size="22">
@@ -55,7 +55,7 @@
           <textarea name="ft_message" id="ft_message" cols="25" rows="10"></textarea>
         </div>
         <p>
-          <input type="submit" value="Submit" class="button small orange">
+          <input type="submit" value="Submit" onclick="sendMail();" class="button small orange">
           &nbsp;
           <input type="reset" value="Reset" class="button small grey">
         </p>
@@ -65,7 +65,8 @@
 </div>
 <div class="wrapper row4">
   <div id="copyright" class="clear">
-    <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="#">National Safari Park Sri Lanka</a></p>
+    <p class="fl_right">Powered by <a href="#" title="Free Website Templates">Faculty of Information Technology, University of Moratuwa.</a></p>
   </div>
 </div>
+

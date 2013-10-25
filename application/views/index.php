@@ -36,7 +36,7 @@
     <div id="homepage" class="clear">
       <div class="one_half first">
         <article class="push30">
-          <div class="boxholder"><img src="images/demo/1200x400.gif" alt=""></div>
+          <div class="boxholder" style="height: 280px"><iframe style="width: 550px; max-width: 100%; height: 280px; margin: 0; padding: 0; border: none;line-height: normal; vertical-align: middle;"src="http://www.youtube.com/embed/QtwxRO5YOEw"></iframe></div>
           <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur. Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem.</p>
           <footer class="read-more"><a href="#">Read More &raquo;</a></footer>
         </article>

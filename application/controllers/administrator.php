@@ -7,11 +7,13 @@ class Administrator extends CI_Controller
 	public function __construct() 
 	{
         parent::__construct();
+		$this->load->library('image_CRUD');
     }
 	
 	// This will load the admin login page
 	public function index()
 	{
+		//$this->slider( (object) array('output' => '', 'js_files' => array(), 'css_files' => array()));
 		//echo "called";
 		$this->load->view('admin/adminLogin');
 	}
@@ -108,12 +110,51 @@ class Administrator extends CI_Controller
 			
 			$this->load->view('admin/adminDashboard', $this->view_data );	
 	}
+	function _example_output($output = null)
+	{
+		$this->load->view('admin/adminSlider',$output);	
+	}
 	
-	function slider()
+	function slider( $output = null )
 	{
 		$this->load->model('adminSliderModel');
+	
 		$this->view_data['slider_details'] = $this->adminSliderModel->getSliderDetails();
-		$this->load->view('admin/adminSlider', $this->view_data);
+		
+		$image_crud = new image_CRUD();
+		
+		$image_crud->set_primary_key_field('slider_imageId');
+		$image_crud->set_url_field('image_url');
+		$image_crud->set_table('slider_images');
+		$image_crud->set_image_path('admin_assets/uploads');
+			
+		$output = $image_crud->render();
+		
+		$output = array_merge($this->view_data,(array)$output);
+		
+		
+		
+		$this->load->view('admin/adminSlider', $output);
 	}
+	
+	function sliderImageUpload()
+	{
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }

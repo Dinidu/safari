@@ -1,6 +1,25 @@
+<?php 
+$image_submit = array(
+		'name'	=>'image_submit',
+		'id'	=>'image_submit',
+		'class'	=> ' btn btn-primary',
+		'value' => 'Submit'
+		);
+		
+$file_input = array(
+		'name'	=>'userfile',
+		'id'	=>'userfile',
+		'class'	=> 'file',
+		/*'style'	=> 'width:292px;',*/
+		'size'	=>'1'
+				);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
+	
 	<!--
 		Safari Park Ridiyagama version 1
 
@@ -11,8 +30,17 @@
 		http://zkylark.com
 		http://twitter.com/buddhikaudayasri
 	-->
+	
+	
+	
 <?php include('header.php'); ?>	
-		
+<script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/live_thumbnails.js"></script>
+<script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/ajax_slider_image_upload.js"></script>
+<style>
+	
+	.del{ display:none; position:relative; z-index:200; float:left}
+</style>
+
 </head>
 
 <?php include('menu.php'); ?>
@@ -28,6 +56,62 @@
 					</li>
 				</ul>
 			</div>
+			
+			<div class="row-fluid sortable">
+				<div class="box span12">
+					<div class="box-header well" data-original-title>
+						
+						<h2><i class="icon-th"></i>Add new slider image</h2>
+						<div class="box-icon">
+							<!-- <a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a> -->
+							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+                  	<div class="row-fluid">
+                  		<?php echo form_open_multipart(base_url().'adminImageUpload/upload_file','id="slider" name="slider"');?>
+                        <div class="span4"><h6>
+                        	<div class="control-group">
+								<label class="control-label" for="focusedInput">Image Title</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="image_title" type="text" value="">
+								</div>
+							  </div>
+			             </h6>
+			           </div>
+                
+  		             <div class="span4"><h6>     
+				                    <label class="cabinet"> 
+				                    	<div class="text">Browse</div>
+				                    	
+				                    	<div class="thumb_image_holder"><!--image holder div starts-->
+						                    <div class="main_image">
+						               
+						                    <img id="img_prev" src="#"  style="width:165px; height:122px; background-color: #FBFBFB"/>
+						                    <img src="<?php echo base_url()?>admin_assets/img/delete.png" style="float:left; margin-top:9px; margin-right:9px; cursor:pointer" id="x" class="delete_image del"/>
+						                    
+						                    
+						                </div>
+						               </div>
+							                    	
+				                        <?php //echo form_upload($file_input); ?>
+				                        <input type='file' onchange="readURL(this);" class="file" id="slider_image" name="slider_image" />
+				                   
+				                     </label>
+				               </h6></div>
+				               <div class="span4"><h6> 
+									<div>
+								  		<div class="text">&nbsp;</div>
+								  		<?php echo form_submit($image_submit);?>
+									
+				                	</div>
+				                </h6>
+				               </div>                   
+	                    </div>                   
+	                  </div>
+					</div><!--/span-->
+				</div><!--/row-->
 			
 			
 			<!--Table goes here -->		

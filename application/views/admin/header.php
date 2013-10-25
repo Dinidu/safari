@@ -14,7 +14,7 @@
 		padding: 9px 0;
 	  }
 	</style>
-	<link id="bs-css" href="<?php echo base_url()?>admin_assets/css/bootstrap-cerulean.css" rel="stylesheet">
+	<link id="bs-css" href="<?php echo base_url()?>admin_assets/css/bootstrap-classic.css" rel="stylesheet">
 	<link href="<?php echo base_url()?>admin_assets/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="<?php echo base_url()?>admin_assets/css/charisma-app.css" rel="stylesheet">
 	<link href="<?php echo base_url()?>admin_assets/css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 	<link href='<?php echo base_url()?>admin_assets/css/elfinder.theme.css' rel='stylesheet'>
 	<link href='<?php echo base_url()?>admin_assets/css/jquery.iphone.toggle.css' rel='stylesheet'>
 	<link href='<?php echo base_url()?>admin_assets/css/opa-icons.css' rel='stylesheet'>
-	<link href='<?php echo base_url()?>admin_assets/css/uploadify.css' rel='stylesheet'>
+	<!-- <link href='<?php echo base_url()?>admin_assets/css/uploadify.css' rel='stylesheet'> -->
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -109,7 +109,7 @@
 	<!-- autogrowing textarea plugin -->
 	<script src="<?php echo base_url()?>admin_assets/js/jquery.autogrow-textarea.js"></script>
 	<!-- multiple file upload plugin -->
-	<script src="<?php echo base_url()?>admin_assets/js/jquery.uploadify-3.1.min.js"></script>
+	<!-- <script src="<?php echo base_url()?>admin_assets/js/jquery.uploadify-3.1.min.js"></script> -->
 	<!-- history.js for cross-browser state change on ajax -->
 	<script src="<?php echo base_url()?>admin_assets/js/jquery.history.js"></script>
 	<!-- application script for Charisma demo -->

@@ -10,7 +10,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#"> <img alt="" src="" /> <span>Safari parak Ridiyagama - Administration Panel</span></a>
+				<a class="brand" href="#"> <img alt="" src="" /> <span>Safari Parak Ridiyagama</span></a>
 				
 				<!-- theme selector starts -->
 				<div class="btn-group pull-right theme-container" >

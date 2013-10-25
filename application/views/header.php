@@ -55,9 +55,9 @@
           <li><a href="elements/tabs.html" title="Tabs">Tabs</a></li>
           <li><a href="elements/toggles.html" title="Toggles">Toggles</a></li>
           <li class="last-child"><a href="elements/pricing-tables.html" title="Pricing Tables">Pricing Tables</a></li> -->
-          <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Safari Map">Safari Map</a></li>
-          <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Trip Schedule">Trip Shedules</a></li>
-          <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Vehicles">Vehicles</a></li>
+          <li><a href="<?php echo base_url();?>drivethrough/safarimap/" title="Safari Map">Safari Map</a></li>
+          <li><a href="<?php echo base_url();?>drivethrough/tripschedule" title="Trip Schedule">Trip Shedules</a></li>
+          <li><a href="<?php echo base_url();?>drivethrough/vehicles/" title="Vehicles">Vehicles</a></li>
         </ul>
       </li>
       <li><a class="drop" href="#" title="Visiter Facilities">Visiter Facilities</a>
@@ -76,7 +76,7 @@
           <li class="last-child"><a href="portfolio-layouts/portfolio-overview-4columns.html" title="4 Column Grid">4 Column Grid</a></li> -->
         </ul>
       </li>
-      <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Gallery">Gallery</a>
+      <li><a href="<?php echo base_url();?>gallery/" title="Gallery">Gallery</a>
         <!-- <ul>
           <li><a href="gallery-layouts/gallery-full-width-content.html" title="Full Width Gallery">Full Width Gallery</a></li>
           <li><a href="gallery-layouts/gallery-2columns.html" title="2 Column Grid">2 Column Grid</a></li>

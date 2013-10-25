@@ -29,11 +29,11 @@
           <li><a href="pages/team-member.html" title="Team Member">Team Member</a></li>
           <li class="last-child"><a href="pages/faq.html" title="FAQ">FAQ</a></li> -->
           <li><a href="<?php echo base_url();?>zones/residental/" title="Residental">Residental</a></li>
-          <li><a href="<?php echo base_url();?>zones/residental/" title="Lion Zone">Lion Zone</a></li>
-          <li><a href="<?php echo base_url();?>zones/residental/" title="African Zone">African Zone</a></li>
-          <li><a href="<?php echo base_url();?>zones/residental/" title="Bengal Zone">Bengal Zone</a></li>
-          <li><a href="<?php echo base_url();?>zones/residental/" title="Austrailian Zone">Austrailian Zone</a></li>
-          <li><a href="<?php echo base_url();?>zones/residental/" title="Lepord + Srilankan Zone">Lepord + Srilankan Zone</a></li>
+          <li><a href="<?php echo base_url();?>zones/lion_zone/" title="Lion Zone">Lion Zone</a></li>
+          <li><a href="<?php echo base_url();?>zones/african_zone/" title="African Zone">African Zone</a></li>
+          <li><a href="<?php echo base_url();?>zones/bengal_zone/" title="Bengal Zone">Bengal Zone</a></li>
+          <li><a href="<?php echo base_url();?>zones/austrailian_zone/" title="Austrailian Zone">Austrailian Zone</a></li>
+          <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Lepord + Srilankan Zone">Lepord + Srilankan Zone</a></li>
         </ul>
       </li>
       <li><a class="drop" href="#" title="Drive Through">Drive Through</a>

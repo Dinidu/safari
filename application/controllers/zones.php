@@ -7,9 +7,24 @@ class Zones extends CI_Controller {
 	{
 		$this->load->view('zones/residental');
 	}
-	public function index()
+	public function african_zone()
 	{
-		$this->load->view('pages/full-width-content');
+		$this->load->view('zones/Africanzone');
 	}
-	
+	public function austrailian_zone()
+	{
+		$this->load->view('zones/Austrailianzone');
+	}
+	public function bengal_zone()
+	{
+		$this->load->view('zones/Bengalzone');
+	}
+	public function lion_zone()
+	{
+		$this->load->view('zones/Lionzone');
+	}
+	public function srilankan_zone()
+	{
+		$this->load->view('zones/Srilankanzone');
+	}
 }	

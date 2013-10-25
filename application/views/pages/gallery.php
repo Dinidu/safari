@@ -23,22 +23,19 @@
     <div id="gallery">
       <section>
         <figure>
-          <h2>Gallery Title Goes Here</h2>
+          <h2>Safari Gallery</h2>
           <ul class="clear">
-            <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
-            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
-            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
-            <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
-            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
-            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
-            <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
-            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
-            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/gallery.gif" alt=""></a></li>
+            <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/gallery/1.jpg" alt=""></a></li>
+            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/2.jpg" alt=""></a></li>
+            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/3.jpg" alt=""></a></li>
+            <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/gallery/4.jpg" alt=""></a></li>
+            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/5.jpg" alt=""></a></li>
+            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/6.jpg" alt=""></a></li>
+            <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/gallery/7.jpg" alt=""></a></li>
+            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/8.jpg" alt=""></a></li>
+            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/9.jpg" alt=""></a></li>
           </ul>
-          <figcaption>
-            <p>This is a W3C standards compliant free responsive HTML5 website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. For full terms of use of this template please read our <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>.</p>
-            <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more responsive HTML5 templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>.</p>
-          </figcaption>
+          
         </figure>
       </section>
       <!-- ####################################################################################################### -->
@@ -63,7 +60,7 @@
   </div>
 </div>
 <!-- Footer -->
-<?php $this->load->view('header'); ?>
+<?php $this->load->view('footer'); ?>
 
 <!-- Scripts -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>

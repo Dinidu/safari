@@ -4,14 +4,14 @@
       <h2 class="footer_title">Footer Navigation</h2>
       <nav class="footer_nav">
         <ul class="nospace">
-          <li><a href="#">Home Page</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Meet the Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Zones</a></li>
+          <li><a href="#">Drive Through</a></li>
+          <li><a href="#">Visitor Facilities</a></li>
           <li><a href="#">Gallery</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Online Shop</a></li>
+          <li><a href="#">Safari Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+          
         </ul>
       </nav>
     </div>

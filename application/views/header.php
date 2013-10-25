@@ -11,8 +11,8 @@
     
     <div id="header-contact">
       <ul class="list none">
-        <li><span class="icon-envelope"></span> <a href="#">info@domain.com</a></li>
-        <li><span class="icon-phone"></span> +xx xxx xxxxxxxxxx</li>
+        <li><span class="icon-envelope"></span> <a href="#">info@safarisl.lk</a></li>
+        <li><span class="icon-phone"></span> +94 112 234345</li>
       </ul>
     </div>
     

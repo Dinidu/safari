@@ -3,6 +3,10 @@
 class Zones extends CI_Controller {
 
 	// This will load the admin login page
+	public function index()
+	{
+		$this->load->view('info/404');
+	}
 	public function residental()
 	{
 		$this->load->view('zones/residental');

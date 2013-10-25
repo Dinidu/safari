@@ -49,15 +49,15 @@
           <li><a href="elements/tabs.html" title="Tabs">Tabs</a></li>
           <li><a href="elements/toggles.html" title="Toggles">Toggles</a></li>
           <li class="last-child"><a href="elements/pricing-tables.html" title="Pricing Tables">Pricing Tables</a></li> -->
-          <li><a href="elements/toggles.html" title="Safari Map">Safari Map</a></li>
-          <li><a href="elements/toggles.html" title="Trip Schedule">Trip Shedules</a></li>
-          <li><a href="elements/toggles.html" title="Vehicles">Vehicles</a></li>
+          <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Safari Map">Safari Map</a></li>
+          <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Trip Schedule">Trip Shedules</a></li>
+          <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Vehicles">Vehicles</a></li>
         </ul>
       </li>
       <li><a class="drop" href="#" title="Visiter Facilities">Visiter Facilities</a>
         <ul>
-          <li><a href="elements/toggles.html" title="Car Park">Car Park</a></li>
-          <li><a href="elements/toggles.html" title="Ticket Counter">Ticket Counter</a></li>	
+          <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Car Park">Car Park</a></li>
+          <li><a href="<?php echo base_url();?>zones/srilankan_zone/">Ticket Counter</a></li>	
           <!-- <li><a href="portfolio-layouts/portfolio-overview-full-width-content.html" title="Full Width Portfolio">Full Width Portfolio</a></li>
           <li><a href="portfolio-layouts/portfolio-overview-2columns.html" title="2 Column Grid">2 Column Grid</a></li>
           <li><a href="portfolio-layouts/portfolio-overview-2columns-leftsidebar.html" title="2 Column Grid + Left Sidebar">2 Col. Grid + Left Sidebar</a></li>
@@ -70,7 +70,7 @@
           <li class="last-child"><a href="portfolio-layouts/portfolio-overview-4columns.html" title="4 Column Grid">4 Column Grid</a></li> -->
         </ul>
       </li>
-      <li><a href="#" title="Gallery">Gallery</a>
+      <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Gallery">Gallery</a>
         <!-- <ul>
           <li><a href="gallery-layouts/gallery-full-width-content.html" title="Full Width Gallery">Full Width Gallery</a></li>
           <li><a href="gallery-layouts/gallery-2columns.html" title="2 Column Grid">2 Column Grid</a></li>
@@ -85,8 +85,8 @@
           <li class="last-child"><a href="gallery-layouts/gallery-5columns.html" title="5 Column Grid">5 Column Grid</a></li>
         </ul> -->
       </li>
-      <li><a href="#" title="Safari Blog">Safari Blog</a></li>
-      <li class="last-child"><a href="#" title="Contact Us">Contact Us</a></li>
+      <li><a href="<?php echo base_url();?>zones/srilankan_zone/" title="Safari Blog">Safari Blog</a></li>
+      <li class="last-child"><a href="<?php echo base_url();?>contactus/" title="Contact Us">Contact Us</a></li>
     </ul>
   </nav>
 </div>

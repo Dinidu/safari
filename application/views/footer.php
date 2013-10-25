@@ -18,15 +18,15 @@
     <div class="one_quarter">
       <h2 class="footer_title">Latest Gallery</h2>
       <ul id="ft_gallery" class="nospace spacing clear">
-        <li class="one_third first"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third first"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third first"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="../../images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/demo/80x80.gif" alt=""></a></li>
       </ul>
     </div>
     <div class="one_quarter">

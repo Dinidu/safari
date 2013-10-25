@@ -2,6 +2,8 @@
 
 class Administrator extends CI_Controller 
 {
+	private $view_data = array();
+	
 	public function __construct() 
 	{
         parent::__construct();
@@ -97,6 +99,18 @@ class Administrator extends CI_Controller
 	
 	function dashboard()
 	{
-		$this->load->view('admin/adminDashboard');	
+			//this will load the adminmessage model 
+			$this->load->model('adminMessageModel');
+			
+			//get new messages 
+			$this->view_data['messages'] = $this->adminMessageModel->getMessageCount();
+			$this->view_data['message_count'] = count( $this->view_data['messages'] );
+			
+			$this->load->view('admin/adminDashboard', $this->view_data );	
+	}
+	
+	function slider()
+	{
+		$this->load->view('admin/adminSlider');
 	}
 }

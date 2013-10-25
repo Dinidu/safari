@@ -64,7 +64,7 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 /*----------------------------------------------Header-------------------------------------*/
 
-#header{padding:40px 0;}
+#header{padding:15px 0;}
 
 #header hgroup{display:block; float:left; width:auto; clear:right;}
 #header hgroup h1, #header hgroup h2{margin:0; font-weight:normal; text-transform:none;}

@@ -1,15 +1,21 @@
 <div class="wrapper row1">
   <header id="header" class="full_width clear">
+	<img style="float: left;" src="<?php echo base_url();?>images/header/logo.png" alt="Logo"  />
     <hgroup>
+     </br>	
+     </br>	
+     		
       <h1><a href="index.html">National Safari Park Srilanka</a></h1>
       <h2>Ridiyagama, Hambanthota</h2>
     </hgroup>
+    
     <div id="header-contact">
       <ul class="list none">
         <li><span class="icon-envelope"></span> <a href="#">info@domain.com</a></li>
         <li><span class="icon-phone"></span> +xx xxx xxxxxxxxxx</li>
       </ul>
     </div>
+    
   </header>
 </div>
 <div class="wrapper row2">

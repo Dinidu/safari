@@ -134,31 +134,21 @@
 	<script src="<?php echo base_url();?>admin_assets/js/jquery.validationEngine.js"></script>
 	<script src="<?php echo base_url();?>admin_assets/js/jquery.validationEngine-en.js"></script>
 	
+	 <!-- javascripts for login form validation-->
+    <script src="<?php echo base_url();?>admin_assets/js/ajax_admin_login.js"></script>
+    
 	<script>
-		jQuery(document).ready(function(){
+		jQuery(document).ready(function()
+		{
 			// binds form submission and fields to the validation engine
 			jQuery("#login_form").validationEngine();
+			
 		});
-
-		/**
-		*
-		* @param {jqObject} the field where the validation applies
-		* @param {Array[String]} validation rules for this field
-		* @param {int} rule index
-		* @param {Map} form options
-		* @return an error string if validation failed
-		*/
-		/*function checkHELLO(field, rules, i, options){
-			if (field.val() != "HELLO") {
-				// this allows to use i18 for the error msgs
-				return options.allrules.validate2fields.alertText;
-			}
-		}*/
+		
+		var baseurl =  "<?php echo base_url() ?>";
+		
 	</script>
 	
-    
-    <!-- javascripts for login form validation-->
-    <script src="<?php echo base_url();?>admin_assets/js/ajax_admin_login.js"></script>
     
 </head>
 
@@ -177,7 +167,7 @@
 					</div>
 					<!--<form class="form-horizontal" action="index.html" method="post">-->
 					<?php $attributes = array('class' => 'email', 'id' => 'login_form');?>
-					<?php echo form_open('login/login_validate',$attributes);?>
+					<?php echo form_open('administrator/login_validate',$attributes);?>
 						<fieldset>
 							<div class="input-prepend" title="Username" data-rel="tooltip">
 								<span class="add-on"><i class="icon-user"></i></span><input autofocus class="input-large span10 validate[required]" name="admin_username" id="admin_username" type="text" value="" placeholder="user name" />
@@ -195,7 +185,7 @@
 							<div class="clearfix"></div>
 
 							<p class="center span5">
-							<button type="submit_login" class="btn btn-primary">Login</button>
+							<button type="submit_login" id="login_submit" class="btn btn-primary">Login</button>
 							</p>
 						</fieldset>
 					</form>

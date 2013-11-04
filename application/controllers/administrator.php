@@ -36,7 +36,7 @@ class Administrator extends CI_Controller
 			$admin_name = $this->input->post('admin_username');
 			$admin_password = $this->input->post('admin_password');
 			
-			$this->load->model('user_model');
+			$this->load->model('adminLoginModel');
 			//$valideuser = $this->user_model->veryfy_user($admin_name,$admin_password);
 			$valideuser = true;
 			if($valideuser == true)

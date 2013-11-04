@@ -108,4 +108,9 @@ class Administrator extends CI_Controller
 			
 			$this->load->view('admin/adminDashboard', $this->view_data );	
 	}
+	
+	function slider()
+	{
+		$this->load->view('admin/adminSlider');
+	}
 }

@@ -37,14 +37,14 @@
 				
 				<a data-rel="tooltip" title="54 comments for this week " class="well span3 top-block" href="#">
 					<span class="icon32 icon-green  icon-messages"></span>
-					<div>Comments for the week</div>
+					<div>Number of Hits for the day</div>
 					<div>54 </div>
 					<span class="notification blue">54</span>
 				</a>
 			
 				<a data-rel="tooltip" title="101 total Reviews for the week " class="well span3 top-block" href="#">
 					<span class="icon32 icon-color   icon-star-on"></span>
-					<div>Ratings for the week</div>
+					<div>Number of Hits of the week</div>
 					<div>101</div>
 					<span class="notification yellow">54</span>
 				</a>

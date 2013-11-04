@@ -111,6 +111,9 @@ class Administrator extends CI_Controller
 	
 	function slider()
 	{
-		$this->load->view('admin/adminSlider');
+		$this->load->model('adminSliderModel');
+		$this->view_data['slider_details'] = $this->adminSliderModel->getSliderDetails();
+		$this->load->view('admin/adminSlider', $this->view_data);
 	}
+	
 }

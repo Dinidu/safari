@@ -113,7 +113,7 @@
 					
 					
 			<!--Table goes here -->		
-							<div class="row-fluid sortable">		
+			<div class="row-fluid sortable">		
 				<div class="box span12">
 					<div class="box-header well" data-original-title>
 						<h2><i class="icon-user"></i>Items You have uploaded</h2>

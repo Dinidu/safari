@@ -14,7 +14,11 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/safari/';
+
+/* Page title that appears in the browser's title bar.
+ */
+$config['site_title']   = 'Safari Park Ridiyagama';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +30,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

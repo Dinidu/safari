@@ -74,6 +74,7 @@
 
     // Toggle status
     this.setState(!status)
+	
   }
   
   /*

@@ -17,7 +17,7 @@ class AdminLoginModel extends CI_Model {
 		$this->load->library('PasswordHash', $params);
 		
 		
-		$query = "SELECT * FROM admin_users where user_name=?";
+		$query = "SELECT * FROM users where user_name=?";
 		
 		$q = $this->db->query($query,$admin_username);
 		
@@ -61,7 +61,7 @@ class AdminLoginModel extends CI_Model {
 			'user_password' => $admin_password
 	);
 	
-			$this->db->insert('admin_users', $data);
+			$this->db->insert('users', $data);
 	
 			return true;
 	}

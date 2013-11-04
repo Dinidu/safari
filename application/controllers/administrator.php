@@ -11,7 +11,7 @@ class Administrator extends CI_Controller
 	public function index()
 	{
 		//echo "called";
-		$this->load->view('admin/adminLogin.php');
+		$this->load->view('admin/adminLogin');
 	}
 	
 	 // handles the Administrator log in
@@ -42,19 +42,19 @@ class Administrator extends CI_Controller
 			if($valideuser == true)
 			{	
 				$this->session->set_userdata('admin_username', $admin_name );
-				//echo '{"validation_result": "passed"}'; //if user is a valid user send json data to ajax_admin_login.js
-			
-				redirect('admin'); 
+				echo '{"validation_result": "passed"}'; //if user is a valid user send json data to ajax_admin_login.js
+				
+				//redirect('admin/adminDashboard'); 
 				
 			}
 				
 			else
 			{
-				//echo '{"registration" : "falied"}'; //if something happern during the user validation process ,this json data will pass to create error messages.
+				echo '{"registration" : "falied"}'; //if something happern during the user validation process ,this json data will pass to create error messages.
 				//echo "<script>$().toastmessage('showErrorToast', 'You are not a registered user!');<script>";
 				$this->session->sess_destroy();
 				$this->session->set_flashdata('login3','You are not a registered user!');
-				redirect('login'); 
+				//redirect('admin/adminLogin'); 
 			}
 			
 		}
@@ -64,14 +64,14 @@ class Administrator extends CI_Controller
 			//if username & passwords are empty or bad inputs these json data will be passed to ajax_admin_login.js.
 			//then the error messages will displayed.
 		
-			//$output = '{"admin_username":"'.form_error('admin_username').'",
-			//"admin_password":"'.form_error('admin_password').'"}';
+			$output = '{"admin_username":"'.form_error('admin_username').'",
+			"admin_password":"'.form_error('admin_password').'"}';
 	
-			//echo $output;
+			echo $output;
 			$this->session->sess_destroy();
 			$this->session->set_flashdata('login',form_error('admin_username') );
 			$this->session->set_flashdata('login2',form_error('admin_password') );
-			redirect('login'); 
+			//redirect('admin/adminLogin'); 
 			
 			//echo "<script>$().toastmessage('showErrorToast', 'You are not a registered user!');<script>";
 		}
@@ -95,4 +95,9 @@ class Administrator extends CI_Controller
     function numeric_slash($str_in){
     	return ( ! preg_match("/^([0-9\/])+$/i", $str_in)) ? FALSE : TRUE;
     }    	
+	
+	function dashboard()
+	{
+		$this->load->view('admin/adminDashboard');	
+	}
 }

@@ -37,14 +37,12 @@ class Administrator extends CI_Controller
 			$admin_password = $this->input->post('admin_password');
 			
 			$this->load->model('adminLoginModel');
-			//$valideuser = $this->user_model->veryfy_user($admin_name,$admin_password);
-			$valideuser = true;
+			$valideuser = $this->adminLoginModel->veryfy_user($admin_name,$admin_password);
+			//$valideuser = true;
 			if($valideuser == true)
 			{	
 				$this->session->set_userdata('admin_username', $admin_name );
 				echo '{"validation_result": "passed"}'; //if user is a valid user send json data to ajax_admin_login.js
-				
-				//redirect('admin/adminDashboard'); 
 				
 			}
 				
@@ -54,7 +52,7 @@ class Administrator extends CI_Controller
 				//echo "<script>$().toastmessage('showErrorToast', 'You are not a registered user!');<script>";
 				$this->session->sess_destroy();
 				$this->session->set_flashdata('login3','You are not a registered user!');
-				//redirect('admin/adminLogin'); 
+				//redirect(base_url()."/administrator");  
 			}
 			
 		}
@@ -71,7 +69,8 @@ class Administrator extends CI_Controller
 			$this->session->sess_destroy();
 			$this->session->set_flashdata('login',form_error('admin_username') );
 			$this->session->set_flashdata('login2',form_error('admin_password') );
-			//redirect('admin/adminLogin'); 
+			//index();
+			//redirect(base_url()."/administrator"); 
 			
 			//echo "<script>$().toastmessage('showErrorToast', 'You are not a registered user!');<script>";
 		}

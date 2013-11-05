@@ -17,4 +17,21 @@ class AdminSliderModel extends CI_Model {
 	  	}
 	  	return $data;
 	}
+	
+	/*This will save the */
+	function slier_imageUpload($query,$params){
+			
+			$result = $this->db->query($query,$params);
+			if($result != false){
+				
+				$id = mysql_insert_id();
+				
+				//echo $id;
+				return true;
+			}
+			else{
+				return false;
+			}
+		
+	} 	
 }

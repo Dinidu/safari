@@ -13,6 +13,13 @@ $file_input = array(
 		/*'style'	=> 'width:292px;',*/
 		'size'	=>'1'
 				);
+				
+$title = array(
+			'name'	=>	'title',
+			'id'	=>	'title',
+			'placeholder' => '&nbsp;title',
+			'class' =>'input-xlarge focused'
+			);
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +43,13 @@ $file_input = array(
 <?php include('header.php'); ?>	
 <script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/live_thumbnails.js"></script>
 <script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/ajax_slider_image_upload.js"></script>
+<script>
+	//this will remove the fake pathe when user click the delete button
+	$("#x").click(function() {
+		 $('#slider_image').val('');
+	});
+	
+</script>
 <style>
 	
 	.del{ display:none; position:relative; z-index:200; float:left}
@@ -44,7 +58,6 @@ $file_input = array(
 </head>
 
 <?php include('menu.php'); ?>
-
 
 			<div>
 				<ul class="breadcrumb">
@@ -71,11 +84,12 @@ $file_input = array(
 					<div class="box-content">
                   	<div class="row-fluid">
                   		<?php echo form_open_multipart(base_url().'adminImageUpload/upload_file','id="slider" name="slider"');?>
+                  		<?php echo validation_errors(); ?>
                         <div class="span4"><h6>
                         	<div class="control-group">
 								<label class="control-label" for="focusedInput">Image Title</label>
 								<div class="controls">
-								  <input class="input-xlarge focused" id="image_title" type="text" value="">
+								  <?php echo form_input($title); ?>
 								</div>
 							  </div>
 			             </h6>
@@ -107,7 +121,15 @@ $file_input = array(
 									
 				                	</div>
 				                </h6>
-				               </div>                   
+				               </div> 
+				               
+				               <?php
+									if ($this->session->flashdata('msg')){ 
+										echo "<div class='error_message'>";
+										echo $this->session->flashdata('msg');
+										echo "</div>";
+									}
+									?>                  
 	                    </div>                   
 	                  </div>
 					</div><!--/span-->

@@ -1,6 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
+	
 	<!--
 		Safari Park Ridiyagama version 1
 
@@ -11,8 +14,35 @@
 		http://zkylark.com
 		http://twitter.com/buddhikaudayasri
 	-->
+	
+	
+	
 <?php include('header.php'); ?>	
-		
+
+<?php 
+foreach($css_files as $file): ?>
+	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+<?php endforeach; ?>
+<?php foreach($js_files as $file): ?>
+	<script src="<?php echo $file; ?>"></script>
+<?php endforeach; ?>
+<style type='text/css'>
+body
+{
+	font-family: Arial;
+	font-size: 14px;
+}
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+</style>
+
 </head>
 
 <?php include('menu.php'); ?>
@@ -28,6 +58,29 @@
 					</li>
 				</ul>
 			</div>
+			
+			<div class="row-fluid sortable">
+				<div class="box span12">
+					<div class="box-header well" data-original-title>
+						<h2><i class="icon-th"></i>Add new slider image</h2>
+						<div class="box-icon">
+							<!-- <a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a> -->
+							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+                  	<div class="row-fluid">
+                        <div class="span4"><h6>
+                        	<?php echo $output; ?>
+                        	
+                        </h6></div>
+                        <div class="span4"><h6>span 4</h6></div>
+                        <div class="span4"><h6>span 4</h6></div>
+                    </div>                   
+                  </div>
+				</div><!--/span-->
+			</div><!--/row-->
 			
 			
 			<!--Table goes here -->		

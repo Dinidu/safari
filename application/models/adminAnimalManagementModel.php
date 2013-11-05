@@ -19,7 +19,7 @@ class Adminanimalmanagementmodel extends CI_Model {
 	}
 	
 	/*This will save the */
-	function slier_imageUpload($query,$params){
+	function imageUpload($query,$params){
 			
 			$result = $this->db->query($query,$params);
 			if($result != false){

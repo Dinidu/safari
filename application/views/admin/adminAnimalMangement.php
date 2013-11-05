@@ -65,7 +65,7 @@ $name = array(
 						<a href="<?php echo base_url();?>administrator/dashboard">Admin Panel</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="<?php echo base_url()?>administrator/slider">slider</a>
+						<a href="<?php echo base_url()?>administrator/animal">Animal</a>
 					</li>
 				</ul>
 			</div>
@@ -81,7 +81,7 @@ $name = array(
 						</div>
 					</div>
 					<div class="box-content">
-						<form class="form-horizontal">
+					<?php echo form_open_multipart(base_url().'adminImageUpload/upload_animalInfo','id="anima_info" name="anima_info" class="form-horizontal"');?>
 						  <fieldset>
 							<!-- <legend>Datepicker, Autocomplete, WYSIWYG</legend> -->
 							<div class="control-group">
@@ -95,12 +95,12 @@ $name = array(
   							<div class="control-group">
 								<label class="control-label" for="selectError">Animal Zone</label>
 								<div class="controls">
-								  <select id="selectError" data-rel="chosen">
-									<option>Option 1</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-									<option>Option 4</option>
-									<option>Option 5</option>
+								  <select id="zone" name="zone">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
 								  </select>
 								</div>
 							  </div>
@@ -108,13 +108,13 @@ $name = array(
 							<div class="control-group">
 							  <label class="control-label" for="fileInput">Animal Image</label>
 							  <div class="controls">
-								<input class="input-file uniform_on" id="fileInput" type="file">
+								<input class="input-file uniform_on" id="animalImage" name="animalImage" type="file">
 							  </div>
 							</div>          
 							<div class="control-group">
 							  <label class="control-label" for="textarea2">Animal Description</label>
 							  <div class="controls">
-								<textarea class="cleditor" id="textarea2" rows="3"></textarea>
+								<textarea class="cleditor" id="animalDescription" name="animalDescription" rows="3"></textarea>
 							  </div>
 							</div>
 							<div class="form-actions">

@@ -25,7 +25,7 @@ class AdminImageUpload extends CI_Controller {
 	}
 	
 //####################################################################################
-    function upload_file()
+    function upload_sliderImage()
     {
 		$this->form_validation->set_rules('title', 'Image Title', 'xss_clean|required');
 		$image_title = $this->input->post('title');
@@ -33,9 +33,6 @@ class AdminImageUpload extends CI_Controller {
 		
 		if ($this->form_validation->run() != true)
 		{
-			
-			//echo form_error('title');
-			
 			$this->session->sess_destroy();
 			$this->session->set_flashdata('mg', 'Image Title can not be empty');
 			//die();
@@ -66,7 +63,7 @@ class AdminImageUpload extends CI_Controller {
 					$query = 'INSERT INTO slider_images (slider_imageTitle,image_url,status,added_by,added_date) 
 					VALUES(?,?,?,?,?)';
 					
-					$result = $this->adminSliderModel->slier_imageUpload($query,$params); 
+					$result = $this->adminSliderModel->imageUpload($query,$params); 
 					
 					if($result == true){ redirect('administrator/slider'); }
 									
@@ -81,5 +78,76 @@ class AdminImageUpload extends CI_Controller {
 				}
 			}
 		}
+	}
+
+
+	function upload_animalInfo()
+	{
+		$this->form_validation->set_rules('name', 'Animal Name', 'xss_clean|required');
+		$this->form_validation->set_rules('animalDescription', 'Animal Description', 'xss_clean|required');
+		
+		$name = $this->input->post('name');
+		$zone = $this->input->post('zone');
+		$image = $this->input->post('animalImage');
+		$description = $this->input->post('animalDescription');
+		
+		echo $name;
+		echo $zone;
+		echo $image;
+		echo $description;
+		
+		if ($this->form_validation->run() != true)
+		{
+			$this->session->sess_destroy();
+			$this->session->set_flashdata('mg', 'Image Title can not be empty');
+		
+			redirect('administrator/animal');	
+		}
+		else
+		{
+				/*------------------- home page image upload ------------*/
+			if ($_FILES['animalImage']['name']!="") 
+			{
+				// this is  will upload the image for home page....
+				$config['upload_path'] = './images/animals';
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['file_name'] = $name.'_animal_image';
+				// $config['max_size'] = '1500';
+				// $config['max_width'] = '180';
+				// $config['max_height'] = '113';
+				$this->upload->initialize($config); 
+				if($this->upload->do_upload('animalImage')){
+					$img = $this->upload->data();
+					//echo $img_home['file_name'];	
+					$animalImageName = $img['file_name'];	
+					
+					$this->load->model('adminanimalmanagementmodel');
+					
+					$params = array($name,$zone,$description,$animalImageName,1,1,date("Y-m-d H:i:s"));
+					
+					$query = 'INSERT INTO animals (name,zoneid,discription,image,is_available, uid, added_date) 
+					VALUES(?,?,?,?,?,?,?)';
+					
+					//echo $query;
+					//die();
+					
+					$result = $this->adminanimalmanagementmodel->imageUpload($query,$params); 
+					
+					if($result == true){ redirect('administrator/animal'); }
+					//echo "upload ok ";
+									
+					}
+				else{
+					echo "upload error";
+					$this->data['error'] = $this->upload->display_errors();
+			
+					$this->session->sess_destroy();
+					$this->session->set_flashdata('image',$this->data['error'] );
+					redirect('administrator/animal');
+			
+				}
+			}
+		}
+		
 	}
 }

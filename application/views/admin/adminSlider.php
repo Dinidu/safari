@@ -83,7 +83,7 @@ $title = array(
 					</div>
 					<div class="box-content">
                   	<div class="row-fluid">
-                  		<?php echo form_open_multipart(base_url().'adminImageUpload/upload_file','id="slider" name="slider"');?>
+                  		<?php echo form_open_multipart(base_url().'adminImageUpload/upload_sliderImage','id="slider" name="slider"');?>
                   		<?php echo validation_errors(); ?>
                         <div class="span4"><h6>
                         	<div class="control-group">

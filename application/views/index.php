@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -22,7 +23,12 @@
   <div class="stretched">
     <div class="rslides_container clear">
       <ul class="rslides clear" id="rslides">
-        <li><img src="images/demo/slider/1.jpg" alt=""></li>
+      <?php	foreach($slider_images as $row)
+      	{
+      		 echo '<li><img src="'.base_url()."images/demo/slider/".$row->image_url.'"></li>';
+		}
+		?> 
+       
         <li><img src="images/demo/slider/2.jpg" alt=""></li>
         <li><img src="images/demo/slider/3.jpg" alt=""></li>
       </ul>

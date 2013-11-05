@@ -19,7 +19,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('index');
+		$this->load->model('adminSliderModel');
+		$this->view_data['slider_images'] = $this->adminSliderModel->getSliderDetails();
+		$this->load->view('index', $this->view_data );
 	}
 }	
 

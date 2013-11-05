@@ -166,7 +166,13 @@ $title = array(
 						  	{
 						  		echo '<tr>';
 								echo '<td>'; 
-								echo '<img src ="'.base_url()."images/demo/slider/".$row->image_url.'" style="width:100px; height:10%;" />';
+								echo '
+									<ul class="thumbnails gallery">
+														<li id="image-1" class="thumbnail">
+								<a style="background:url("'.base_url()."images/demo/slider/".$row->image_url.'")" title="'.$row->slider_imageTitle.'" href="'.base_url()."images/demo/slider/".$row->image_url.'">
+								<img class="grayscale" src="'.base_url()."images/demo/slider/".$row->image_url.'" 
+								alt="Sample Image 1"></a>
+							</li>';
 								echo'</td>';
 								
 								echo '<td class="center">'; echo $row->slider_imageTitle ;echo '</td>';
@@ -176,20 +182,14 @@ $title = array(
 									else { echo '<span class="label label-important">Banned</span>'; }
 								
 								echo '</td>';
+								
 								echo '<td class="center">
-										<a class="btn btn-success" href="#">
-										<i class="icon-zoom-in icon-white"></i>  
-										View                                            
-										</a>
-										<a class="btn btn-info" href="#">
-										<i class="icon-edit icon-white"></i>  
-										Edit                                            
-										</a>
-										<a class="btn btn-danger" href="#">
+									
+									<a class="btn btn-danger" href="#">
 										<i class="icon-trash icon-white"></i> 
 										Delete
-										</a>
-										</td>
+									</a>
+								</td>
 								</tr>';  
 							}
 						  	

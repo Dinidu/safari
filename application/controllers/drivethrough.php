@@ -2,6 +2,8 @@
 
 class DriveThrough extends CI_Controller {
 
+	private $view_data = array();
+	
 	/**
 	 * Index Page for this controller.
 	 *
@@ -27,7 +29,10 @@ class DriveThrough extends CI_Controller {
 	}
 	public function tripschedule()
 	{
-		$this->load->view('pages/tripschedule');
+		$this->load->model('adminScheduleManagement');
+		$this->view_data['schedule_details'] = $this->adminScheduleManagement->getScheduleDetails();
+		$this->view_data['vehicle_details'] = $this->adminScheduleManagement->getVehicleDetails();
+		$this->load->view('pages/tripschedule',$this->view_data);
 	}
 	public function vehicles()
 	{

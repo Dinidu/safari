@@ -20,43 +20,40 @@
     <!-- ################################################################################################ -->
     
     <section>
-      <h1>Table(s)</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-            <th>Header 4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="light">
-            <td>Value 1</td>
-            <td>Value 2</td>
-            <td>Value 3</td>
-            <td>Value 4</td>
-          </tr>
-          <tr class="dark">
-            <td>Value 5</td>
-            <td>Value 6</td>
-            <td>Value 7</td>
-            <td>Value 8</td>
-          </tr>
-          <tr class="light">
-            <td>Value 9</td>
-            <td>Value 10</td>
-            <td>Value 11</td>
-            <td>Value 12</td>
-          </tr>
-          <tr class="dark">
-            <td>Value 13</td>
-            <td>Value 14</td>
-            <td>Value 15</td>
-            <td>Value 16</td>
-          </tr>
-        </tbody>
-      </table>
+      <table class="table table-striped table-bordered bootstrap-datatable datatable">
+						  <thead>
+							  <tr>
+								  <th>Schedule No</th>
+								  <th>Vehicle Type</th>
+								  <th>Start Time</th>
+								  <th>End Time </th>
+								  <th>Capacity</th>
+								  <th>Number of seats</th>
+								  <th>Notes</th>
+								  
+							  </tr>
+						  </thead>   
+						  <tbody>
+						  	
+						  	<?php 
+						  	
+						  	foreach ($schedule_details as $row) 
+						  	{
+						  		echo '<tr class="edit">';
+								echo '<td>'; echo $row->tripid;echo'</td>';
+								echo '<td class="center">'; echo $row->vehicleType ;echo '</td>';
+								echo '<td class="center">'; echo $row->starttime ;echo '</td>';
+								echo '<td class="center">'; echo $row->endtime ; echo '</td>';
+								echo '<td class="center">'; echo $row->capacity ; echo '</td>';
+								echo '<td class="center">'; echo $row->availableseets ; echo '</td>';
+								echo '<td class="center">'; echo $row->note ; echo '</td>';
+								  
+							}
+						  	
+						  	?>
+							
+							</tbody>
+							</table>
     </section>
    
     <!-- ################################################################################################ -->

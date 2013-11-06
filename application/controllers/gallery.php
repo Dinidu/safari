@@ -19,7 +19,9 @@ class Gallery extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('pages/gallery');
+		$this->load->model('adminGalleryManagement');
+		$this->view_data['gallery_details'] = $this->adminGalleryManagement->getGalleryDetails();
+		$this->load->view('pages/gallery',$this->view_data);
 	}
 }	
 

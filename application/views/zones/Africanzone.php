@@ -52,24 +52,38 @@
     </div>
    <div id="portfolio">
       <ul class="clear">
-        <li class="one_quarter first">
-          <article class="clear">
-            <figure class="post-image"><img src="<?php echo base_url();?>images/animals/af1.jpg" alt=""></figure>
-            <header>
-              <h2 class="blog-post-title"><a href="#">Ethiopian Wolf</a></h2>
-              <div class="blog-post-meta">
-                <ul>
-                  <li class="blog-post-date">
-                    <time datetime="2000-04-06T08:15+00:00"><strong>Completed:</strong> 6<sup>th</sup> April 2000</time>
-                  </li>
-                  <li class="blog-post-cats"><a href="#">Category 1</a>, <a href="#">Category 2</a></li>
-                </ul>
-              </div>
-            </header>
-            <p>This carnivore (meat-eater) lives in pairs or small groups. Every morning the pack gathers for a noisy greeting ceremony. Then they start hunting for small mammals to eat during the day. Their long, thin snouts (noses) are perfect for sniffing out rats. These wolves are only found in Ethiopia, and there are only 500 left in the wild.</p>
-            <footer class="read-more"><a href="#">Read More &raquo;</a></footer>
-          </article>
-        </li>
+      	<?php
+      		foreach ($animal_details as $row) 
+			{
+				echo '<li class="one_quarter first">
+		          <article class="clear">
+		            <figure class="post-image"><img src="'.base_url().'images/animals/'.$row->image.'" alt=""></figure>
+		            <header>
+				              <h2 class="blog-post-title"><a href="#">'.$row->name .'</a></h2>
+				                <div class="blog-post-meta">
+		                <ul>
+		                  <li class="blog-post-date">
+		                    <time datetime="2000-04-06T08:15+00:00"><strong>Completed:</strong> 6<sup>th</sup> April 2000</time>
+		                  </li>
+		                  <li class="blog-post-cats"><a href="#">Category 1</a>, <a href="#">Category 2</a></li>
+		                </ul>
+		              </div>
+		            </header>
+		            <p>'.$row->discription.'</p>
+		            <footer class="read-more"><a href="#">Read More &raquo;</a></footer>
+		          </article>
+		        </li>';
+				
+			}
+      	
+      	
+      	?>
+        
+        
+        
+        
+        
+        
         <li class="one_quarter">
           <article class="clear">
             <figure class="post-image"><img src="<?php echo base_url();?>images/animals/af2.jpg" alt=""></figure>

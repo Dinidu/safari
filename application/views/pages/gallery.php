@@ -25,7 +25,22 @@
         <figure>
           <h2>Safari Gallery</h2>
           <ul class="clear">
-            <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/gallery/1.jpg" alt=""></a></li>
+          	<?php 
+          		$i= 0;
+	          	foreach( $gallery_details as $row)
+				{
+					if($i % 3 == 0 || $i == 0 )
+					{
+						echo '<li class="one_third first "><a href=""><img src="'.base_url().'images/gallery/'.$row->image_url.'" alt=""></a></li>';
+					}
+					else{
+							echo '<li class="one_third  "><a href=""><img src="'.base_url().'images/gallery/'.$row->image_url.'" alt=""></a></li>';
+						}
+					$i++;
+					}
+					
+			?>
+            <!-- <li class="one_third first"><a href="<?php echo base_url();?>images/gallery/1.jpg"><img src="<?php echo base_url();?>images/gallery/1.jpg" alt=""></a></li>
             <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/2.jpg" alt=""></a></li>
             <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/3.jpg" alt=""></a></li>
             <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/gallery/4.jpg" alt=""></a></li>
@@ -33,7 +48,7 @@
             <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/6.jpg" alt=""></a></li>
             <li class="one_third first"><a href="#"><img src="<?php echo base_url();?>images/gallery/7.jpg" alt=""></a></li>
             <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/8.jpg" alt=""></a></li>
-            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/9.jpg" alt=""></a></li>
+            <li class="one_third"><a href="#"><img src="<?php echo base_url();?>images/gallery/9.jpg" alt=""></a></li> -->
           </ul>
           
         </figure>

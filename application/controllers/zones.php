@@ -13,7 +13,11 @@ class Zones extends CI_Controller {
 	}
 	public function african_zone()
 	{
-		$this->load->view('zones/Africanzone');
+		$this->load->model('adminanimalmanagementmodel');
+	
+		$this->view_data['animal_details'] = $this->adminanimalmanagementmodel->getAnimalDetails();
+		
+		$this->load->view('zones/Africanzone',$this->view_data);
 	}
 	public function austrailian_zone()
 	{

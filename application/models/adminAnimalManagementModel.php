@@ -9,7 +9,12 @@ class Adminanimalmanagementmodel extends CI_Model {
 	
 	function getAnimalDetails()
 	{
-		$query ="SELECT * FROM animals ";
+		$query ="SELECT animal_id,name,zoneid,discription,image,is_available,uid,added_date,
+		user_id,user_name,zone_id,zone_name 
+		FROM animals 
+		LEFT JOIN users ON animals.uid=users.user_id 
+		LEFT JOIN zones ON animals.zoneid= zones.zone_id; ";
+		
 		$query_result = $this->db->query($query);
 		$data = array();
 	  	foreach($query_result->result() as $row){

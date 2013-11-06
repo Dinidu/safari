@@ -42,13 +42,9 @@ $name = array(
 	
 <?php include('header.php'); ?>	
 <script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/live_thumbnails.js"></script>
-<script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/ajax_slider_image_upload.js"></script>
+<script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/ajax_animalEdit.js"></script>
 <script>
-	//this will remove the fake pathe when user click the delete button
-	$("#x").click(function() {
-		 $('#slider_image').val('');
-	});
-	
+	var baseurl =  "<?php echo base_url() ?>";	
 </script>
 <style>
 	
@@ -146,7 +142,8 @@ $name = array(
 						  <thead>
 							  <tr>
 								  <th>Thumbnail</th>
-								  <th>Title</th>
+								  <th>Name</th>
+								  <th>Zone</th>
 								  <th>Added By</th>
 								  <th>Status</th>
 								  <th>Actions</th>
@@ -158,7 +155,7 @@ $name = array(
 						  	
 						  	foreach ($animal_details as $row) 
 						  	{
-						  		echo '<tr>';
+						  		echo '<tr class="edit">';
 								echo '<td>'; 
 								echo '
 									<ul class="thumbnails gallery">
@@ -170,15 +167,17 @@ $name = array(
 								echo'</td>';
 								
 								echo '<td class="center">'; echo $row->name ;echo '</td>';
-								echo '<td class="center">'; echo $row->uid ; echo '</td>';
+								echo '<td class="center">'; echo $row->zone_name ;echo '</td>';
+								echo '<td class="center">'; echo $row->user_name ; echo '</td>';
 								echo '<td class="center">';
 									if( $row->is_available == 1){ echo '<span class="label label-success"> Active </span>'; }
 									else { echo '<span class="label label-important">Banned</span>'; }
 								
 								echo '</td>';
 								
-								echo '<td class="center">
-									<a class="btn btn-info" href="#">
+								echo '<td class="center edit">';
+								echo '<input type="hidden" name="animal_id" id="animal_id" value="'.$row->animal_id.'">';					
+								echo '<a class="btn btn-info" href="'.base_url().'administrator/animalEdit" id="animal_edit">
 										<i class="icon-edit icon-white"></i>  
 										Edit                                            
 									</a>

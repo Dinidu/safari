@@ -42,7 +42,7 @@ $title = array(
 	
 <?php include('header.php'); ?>	
 <script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/live_thumbnails.js"></script>
-<script type="text/javascript" src="<?php echo base_url()?>admin_assets/js/ajax_slider_image_upload.js"></script>
+
 <script>
 	//this will remove the fake pathe when user click the delete button
 	$("#x").click(function() {

@@ -126,6 +126,11 @@ class Administrator extends CI_Controller
 		
 		$this->load->view('admin/adminAnimalMangement',$this->view_data );
 	}
+	function animalEdit()
+	{
+		$animal_id = $this->input->post('animal_id');
+		echo '{"animal_edit": '.$animal_id.' }';
+	}
 	
 	
 	

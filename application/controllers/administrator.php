@@ -149,6 +149,9 @@ class Administrator extends CI_Controller
 	//render admin gallery view
 	function gallery()
 	{
+		$this->load->model('adminGalleryManagement');
+		$this->view_data['gallery_details'] = $this->adminGalleryManagement->getGalleryDetails();
+		$this->load->view('admin/adminGallery', $this->view_data );
 		
 	}
 	

@@ -63,7 +63,7 @@ class AdminImageUpload extends CI_Controller {
 					$query = 'INSERT INTO slider_images (slider_imageTitle,image_url,status,added_by,added_date) 
 					VALUES(?,?,?,?,?)';
 					
-					$result = $this->adminSliderModel->imageUpload($query,$params); 
+					$result = $this->adminSliderModel->slider_imageUpload($query,$params); 
 					
 					if($result == true){ redirect('administrator/slider'); }
 									

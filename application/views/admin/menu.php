@@ -74,7 +74,7 @@
 						<li><a class="ajax-link" href="<?php echo base_url();?>administrator/slider"><i class="icon-film"></i><span class="hidden-tablet"> Slider</span></a></li>
 						<li><a class="ajax-link" href="<?php echo base_url();?>administrator/animal"><i class="icon-star-empty"></i><span class="hidden-tablet"> Animal</span></a></li>
 						<li><a class="ajax-link" href="<?php echo base_url();?>administrator/schedule"><i class="icon-time"></i><span class="hidden-tablet"> Shedule </span></a></li>
-						<li><a class="ajax-link" href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Gallery</span></a></li>
+						<li><a class="ajax-link" href="<?php echo base_url();?>administrator/gallery"><i class="icon-picture"></i><span class="hidden-tablet"> Gallery</span></a></li>
 						<li><a class="ajax-link" href="typography.html"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span></a></li>
 						<li><a class="ajax-link" href="<?php echo base_url();?>administrator/user"><i class="icon-user"></i><span class="hidden-tablet"> Users</span></a></li>
 						<li><a class="ajax-link" href="typography.html"><i class="icon-pencil"></i><span class="hidden-tablet"> Profile</span></a></li>

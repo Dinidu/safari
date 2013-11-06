@@ -1,15 +1,17 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class AdminSliderModel extends CI_Model {
+class AdminGalleryManagement extends CI_Model {
 
 	function __construct()
 	{
 		parent:: __construct();
 	}
 	
-	function getSliderDetails()
+	
+	function getGalleryDetails()
 	{
-		$query ="SELECT * FROM slider_images ";
+		$query ="SELECT * FROM gallery ; ";
+		
 		$query_result = $this->db->query($query);
 		$data = array();
 	  	foreach($query_result->result() as $row){
@@ -19,7 +21,7 @@ class AdminSliderModel extends CI_Model {
 	}
 	
 	/*This will save the */
-	function slider_imageUpload($query,$params){
+	function gallery_imageUpload($query,$params){
 			
 			$result = $this->db->query($query,$params);
 			if($result != false){

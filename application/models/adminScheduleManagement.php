@@ -9,7 +9,7 @@ class AdminScheduleManagement extends CI_Model {
 	
 	function getScheduleDetails()
 	{
-		$query ="SELECT tripid,vehicleid,starttime,endtime,capacity,availableseets,tripschedule.note,uid,status,
+		$query ="SELECT tripid,vehicleid,starttime,endtime,capacity,availableseets,tripschedule.note,uid,tripschedule.status,
 		user_id,user_name,id,vehicleType 
 		FROM tripschedule 
 		LEFT JOIN users ON tripschedule.uid=users.user_id 

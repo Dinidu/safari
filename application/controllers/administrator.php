@@ -97,6 +97,7 @@ class Administrator extends CI_Controller
     	return ( ! preg_match("/^([0-9\/])+$/i", $str_in)) ? FALSE : TRUE;
     }    	
 	
+	//render admin dashboard
 	function dashboard()
 	{
 			//this will load the adminmessage model 
@@ -109,6 +110,7 @@ class Administrator extends CI_Controller
 			$this->load->view('admin/adminDashboard', $this->view_data );	
 	}
 	
+	//render the admin slider view
 	function slider( $output = null )
 	{
 		$this->load->model('adminSliderModel');
@@ -118,6 +120,7 @@ class Administrator extends CI_Controller
 		$this->load->view('admin/adminSlider', $this->view_data);
 	}
 	
+	//render athe adcmin anima view
 	function animal()
 	{
 		$this->load->model('adminanimalmanagementmodel');
@@ -126,23 +129,43 @@ class Administrator extends CI_Controller
 		
 		$this->load->view('admin/adminAnimalMangement',$this->view_data );
 	}
+	//render athe admin animal edit view
 	function animalEdit()
 	{
 		$animal_id = $this->input->post('animal_id');
-		
-		
-		
 		echo '{"animal_edit": '.$animal_id.' }';
 	}
 	
+	//render athe adcmin schedule view
 	function schedule()
 	{
-		
 		$this->load->model('adminScheduleManagement');
 		$this->view_data['schedule_details'] = $this->adminScheduleManagement->getScheduleDetails();
 		$this->view_data['vehicle_details'] = $this->adminScheduleManagement->getVehicleDetails();
 		
 		$this->load->view('admin/adminSchedule',$this->view_data );	
+	}
+	
+	//render admin gallery view
+	function gallery()
+	{
+		
+	}
+	
+	//render admin messages view
+	function messages()
+	{
+		
+	}
+	
+	//render admin user view
+	function user()
+	{
+		$this->load->model('adminUserManagement');
+		$this->view_data['user_details'] = $this->adminUserManagement->getUserDetails();
+		
+		$this->load->view('admin/adminUser',$this->view_data );	
+		
 	}
 	
 	

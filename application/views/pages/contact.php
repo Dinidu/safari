@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<title>RS-1200 Prototype 51 | Pages | Contact</title>
+<title>Safari Srilanka</title>
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="<?php echo base_url();?>layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
@@ -22,8 +22,8 @@
     <!-- ################################################################################################ -->
     <div id="contact" class="clear">
       <div class="one_half first">
-        <h1>Puruselit mauris nulla hendimentesque</h1>
-        <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
+        <h1>National Safari Park SriLanka</h1>
+        <p>We are really happy to get your feedbacks, comment and suggessions on safari park</p>
         <div id="respond">
           <h2>Contact Us</h2>
           <form class="rnd5" action="#" method="post">
@@ -47,11 +47,11 @@
         </div>
       </div>
       <div class="one_half">
-        <div class="map push50"><img src="<?php echo base_url();?>images/demo/1200x400.gif" alt=""></div>
+        <div class="map push50"><img src="<?php echo base_url();?>images/animals/cont.jpg" alt=""></div>
         <section class="contact_details clear">
-          <h2>Puruselit mauris nulla hendimentesque</h2>
-          <p>This is a W3C standards compliant free responsive HTML5 website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. For full terms of use of this template please read our <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>.</p>
-          <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more responsive HTML5 templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>.</p>
+          <h2>National Safari Park SriLanka</h2>
+          <p>The safari Wildlife Park will feature wildlife conservation and breeding under the direction of zoologists and wildlife men, especially of endangered endemic species. It is mention that it will be in close proximity to the Bundala bird sanctuary and the hot water springs at Madunagala as well as the new botanical gardens at Mirijjawila, due to official sources</a>.</p>
+          
           <div class="one_half first">
             <address>
             Company Name<br>

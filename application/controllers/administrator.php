@@ -86,7 +86,7 @@ class Administrator extends CI_Controller
 		//destroy the session data
 		$this->session->sess_destroy();
 	
-		redirect(base_url()); 
+		redirect(base_url()."administrator"); 
 		}
 
 	function alpha_dash_space($str_in){
@@ -163,6 +163,7 @@ class Administrator extends CI_Controller
 	{
 		$this->load->model('adminUserManagement');
 		$this->view_data['user_details'] = $this->adminUserManagement->getUserDetails();
+		$this->view_data['user_types'] = $this->adminUserManagement->getUserTypes();
 		
 		$this->load->view('admin/adminUser',$this->view_data );	
 		

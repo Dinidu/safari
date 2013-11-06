@@ -29,7 +29,8 @@ class AdminScheduleSave extends CI_Controller {
 		$this->form_validation->set_rules('note','Note ', 'xss_clean');
 		
 	
-		if ($this->form_validation->run() == true){
+		if ($this->form_validation->run() == true)
+		{
 			
 			//asigning post data to variables
 			$vehicleType = $this->input->post('vehicleType');

@@ -54,11 +54,16 @@ class AdminLoginModel extends CI_Model {
 	//######################################################################################################
 	//this updates the data in to database when admin create a new user
 	
-	function user_register($admin_username, $admin_password){
+	function user_register($user_name, $userType, $fullName, $email, $contactNum, $password){
 		
 	$data = array(
-			'user_name' => $admin_username,
-			'user_password' => $admin_password
+			'user_name' => $user_name,
+			'user_password' => $password,
+			'full_name'=>$fullName,
+			'email'=>$email,
+			'contact_number'=>$contactNum,
+			'user_type'=>$userType,
+			'status'=>1
 	);
 	
 			$this->db->insert('users', $data);

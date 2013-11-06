@@ -77,18 +77,28 @@ $name = array(
 						</div>
 					</div>
 					<div class="box-content">
-					<?php echo form_open(base_url().'adminScheduleSave/schedule_save','id="scheduleSave" name="scheduleSave" class="form-horizontal" ');?>
+					<?php echo form_open(base_url().'adminUserRegistration/adminUserSave','id="userSave" name="userSave" class="form-horizontal" ');?>
 						  <fieldset>
+						  	
+						  	<div class="control-group">
+							  <label class="control-label" for="typeahead">User Name </label>
+							  <div class="controls">
+								<input class="input-file uniform_on" id="user_name" name="user_name" type="text">
+								<!-- <p class="help-block">Start typing to activate auto complete!</p> -->
+							  </div>
+							</div>
+							
+							
 							<!-- <legend>Datepicker, Autocomplete, WYSIWYG</legend> -->
 							
-							 <!-- <div class="control-group">
-								<label class="control-label" for="selectError">Vehicle Type</label>
+							 <div class="control-group">
+								<label class="control-label" for="selectError">User Type</label>
 								<div class="controls">
-								  <select id="vehicleType" name="vehicleType" data-rel="chosen">
+								  <select id="userType" name="userType" data-rel="chosen">
 								  	
 								  	<?php 
-				                        for($i =0; $i<count($vehicle_details);$i++){
-				                            echo '<option value="'.$vehicle_details[$i]->id.'"  > '.$vehicle_details[$i]->vehicleType.'</option>';
+				                        for($i =0; $i<count($user_types);$i++){
+				                            echo '<option value="'.$user_types[$i]->usertype_id.'"  > '.$user_types[$i]->type.'</option>';
 				                            }
 				                        
 				                        ?>
@@ -97,44 +107,44 @@ $name = array(
 									<option value="3">3</option>
 									<option value="4">4</option>
 									<option value="5">5</option> -->
-								  <!-- </select>
+								  </select>
 								</div>
-							  </div> --> 
+							  </div>
 							  
 							
 							<div class="control-group">
-							  <label class="control-label" for="typeahead">Start Time </label>
+							  <label class="control-label" for="typeahead">Full Name </label>
 							  <div class="controls">
-								<input class="input-file uniform_on" id="startTime" name="startTime" type="text">
-								<!-- <p class="help-block">Start typing to activate auto complete!</p> -->
+								<input class="input-file uniform_on" id="fullName" name="fullName" type="text">
+								
 							  </div>
 							</div>
 
 							<div class="control-group">
-							  <label class="control-label" for="fileInput">End Time</label>
+							  <label class="control-label" for="fileInput">Email</label>
 							  <div class="controls">
-								<input class="input-file uniform_on" id="endTime" name="endTime" type="text">
+								<input class="input-file uniform_on" id="email" name="email" type="text">
 							  </div>
 							</div>          
 							<div class="control-group">
-							  <label class="control-label" for="fileInput">Capacity</label>
+							  <label class="control-label" for="fileInput">Contact Number</label>
 							  <div class="controls">
-								<input class="input-file uniform_on" id="capacity" name="capacity" type="text">
+								<input class="input-file uniform_on" id="contactNum" name="contactNum" type="text">
 							  </div>
 							</div>
 							<div class="control-group">
-							  <label class="control-label" for="fileInput">Number of Seats</label>
+							  <label class="control-label" for="fileInput">User Password</label>
 							  <div class="controls">
-								<input class="input-file uniform_on" id="numOfSeats" name="numOfSeats" type="text">
+								<input class="input-file uniform_on" id="password1" name="password1" type="password">
 							  </div>
 							</div>
 							
 							<div class="control-group">
-							  <label class="control-label" for="textarea2">Note</label>
+							  <label class="control-label" for="fileInput">Re-Enter Password</label>
 							  <div class="controls">
-								<textarea class="cleditor" id="note" name="note" rows="3"></textarea>
-							  </div> 
-							 </div> 
+								<input class="input-file uniform_on" id="password2" name="password2" type="password">
+							  </div>
+							</div>
 
 							  
 							<div class="form-actions">
@@ -192,7 +202,7 @@ $name = array(
 								
 								echo '</td>';
 								echo '<td class="center edit">';
-								echo '<input type="hidden" name="animal_id" id="animal_id" value="'.$row->user_id.'">';					
+								echo '<input type="hidden" name="user_id" id="user_id" value="'.$row->user_id.'">';					
 								echo '<a class="btn btn-info" href="'.base_url().'administrator/animalEdit" id="animal_edit">
 										<i class="icon-edit icon-white"></i>  
 										Edit                                            

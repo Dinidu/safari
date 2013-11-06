@@ -91,10 +91,6 @@ class AdminImageUpload extends CI_Controller {
 		$image = $this->input->post('animalImage');
 		$description = $this->input->post('animalDescription');
 		
-		echo $name;
-		echo $zone;
-		echo $image;
-		echo $description;
 		
 		if ($this->form_validation->run() != true)
 		{

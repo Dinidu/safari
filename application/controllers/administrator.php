@@ -129,7 +129,20 @@ class Administrator extends CI_Controller
 	function animalEdit()
 	{
 		$animal_id = $this->input->post('animal_id');
+		
+		
+		
 		echo '{"animal_edit": '.$animal_id.' }';
+	}
+	
+	function schedule()
+	{
+		
+		$this->load->model('adminScheduleManagement');
+		$this->view_data['schedule_details'] = $this->adminScheduleManagement->getScheduleDetails();
+		$this->view_data['vehicle_details'] = $this->adminScheduleManagement->getVehicleDetails();
+		
+		$this->load->view('admin/adminSchedule',$this->view_data );	
 	}
 	
 	

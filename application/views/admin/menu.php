@@ -73,7 +73,7 @@
 						<li><a class="ajax-link" href="<?php echo base_url();?>/administrator/dashboard"><i class="icon-home"></i><span class="hidden-tablet"> Dashboard</span></a></li>
 						<li><a class="ajax-link" href="<?php echo base_url();?>administrator/slider"><i class="icon-film"></i><span class="hidden-tablet"> Slider</span></a></li>
 						<li><a class="ajax-link" href="<?php echo base_url();?>administrator/animal"><i class="icon-star-empty"></i><span class="hidden-tablet"> Animal</span></a></li>
-						<li><a class="ajax-link" href="chart.html"><i class="icon-time"></i><span class="hidden-tablet"> Shedule </span></a></li>
+						<li><a class="ajax-link" href="<?php echo base_url();?>administrator/schedule"><i class="icon-time"></i><span class="hidden-tablet"> Shedule </span></a></li>
 						<li><a class="ajax-link" href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Gallery</span></a></li>
 						<li><a class="ajax-link" href="typography.html"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span></a></li>
 						<li><a class="ajax-link" href="typography.html"><i class="icon-user"></i><span class="hidden-tablet"> Users</span></a></li>
